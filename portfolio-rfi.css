@@ -1,0 +1,91 @@
+h1 {
+    color: #393D50;   
+    text-align: left;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    border: #f56457;
+    border-radius: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: background-color margin-left 3s ease-in border-radius 2s;
+    /*
+    transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);*/
+
+}
+
+h1:hover {
+    color:#f56457;
+    margin-left: 500px;
+    background-color: #393D50;
+    border-radius: 50%;
+}
+
+
+
+button {
+    background-color: #f56457;
+    color: #f7f9f4;
+    border: 50%;
+    border-color: #393D50;
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+
+/*dont use id selector (#) that much*/
+
+#message {
+    background-color: #393D50;
+    color: #ede5d8;
+}
+
+.tag {
+    color: #393D50;
+    font-weight: bolder;
+}
+
+input[type="text"] {
+    color:#f56457;
+}
+
+button:hover {
+    background-color: #393D50;
+    font-weight: bold;
+
+}
+
+/*
+.post:nth-of-type(2n) {
+    background-color: grey;
+}
+*/
+
+.square {
+    width: 10px;
+    height: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ede5d8;
+    background-color: #393D50;
+}
+
+#board{
+    display: flex;
+    margin: 0 auto;
+    width: 50px;
+    flex-wrap: wrap;
+}
+
+.square:nth-of-type(2n) {
+    background-color: #f56457;
+}
+
+.words {
+    width: 200px;
+    height: 200px;
+    background-color: #f56457;
+    border-left: 5px dotted #393D50;
+	padding-left: 5px;
+}
+
+body {
+    background-color: #ede5d8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

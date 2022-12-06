@@ -1,0 +1,113 @@
+h1 {
+    color: #393D50;   
+    text-align: left;
+    font-weight: bolder;
+    /*letter-spacing: 10px;*/
+    border: #f56457;
+    border-radius: 20px;
+    font-family: 'Pacifico';
+}
+
+body {
+    background-color: #ede5d8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    */
+}
+
+button {
+    background: none;
+    color: #f7f9f4;
+    border: 2px solid;
+    border-color: #393D50;
+    border-radius: 10px;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: all 0.25s;
+}
+
+/*dont use id selector (#) that much*/
+
+#message {
+    background-color: #393D50;
+    color: #ede5d8;
+}
+
+.tag {
+    color: #393D50;
+    font-weight: bolder;
+}
+
+input[type="text"] {
+    color:#f56457;
+}
+
+
+button:hover {
+    border-color: #393D50;
+    color:#f56457;
+    /*offset-x | offset-y | blur-radius | spread-radius | color
+    box-shadow: 12px 12px 10px 1px #f56457;*/
+    box-shadow: 0 0.5em 0.5 -0.4em #393D50;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+
+}
+
+/*
+.post:nth-of-type(2n) {
+    background-color: grey;
+}
+*/
+
+.square {
+    width: 10px;
+    height: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ede5d8;
+    background-color: #393D50;
+}
+
+#board{
+    display: flex;
+    margin: 0 auto;
+    width: 50px;
+    flex-wrap: wrap;
+}
+
+.square:nth-of-type(2n) {
+    background-color: #f56457;
+}
+
+.words {
+    width: 200px;
+    height: 200px;
+    background-color: #f56457;
+    border-left: 5px dotted #393D50;
+	padding-left: 5px;
+}
+
+.circle {
+    width:100px;
+    height:100px;
+    background-color: #393D50;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+/*transitions can specify property name, duration, timing function, delay*/
+
+.circle:hover {
+    background-color: #f56457;
+    border-radius: 50%;
+
+}
+
+span{
+    font-family: 'Pacifico';
+    font-size: 100px;
+}
